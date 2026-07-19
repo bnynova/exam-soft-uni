@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe - Recipe Share</title>
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container py-4">
+    <div id="recipe-detail">
+      <!-- TODO: render title, image, description, ingredients, instructions,
+           author, category, a favorite toggle button, and (if owner/admin)
+           edit + delete buttons. Use getRecipeById(id) from recipeService,
+           id comes from the ?id= query param. -->
+      <p class="text-muted">Loading recipe...</p>
+    </div>
+
+    <hr class="my-4">
+
+    <section id="comments-section">
+      <h2 class="h5">Comments</h2>
+      <div id="comments-list">
+        <!-- TODO: render comments via getCommentsForRecipe(recipeId) -->
+      </div>
+      <form id="comment-form" class="d-flex gap-2 mt-3">
+        <input type="text" id="comment-input" class="form-control" placeholder="Add a comment..." required>
+        <button type="submit" class="btn btn-primary">Post</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <script type="module" src="/src/pages/recipe-detail.js"></script>
+</body>
+</html>

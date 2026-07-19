@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Recipe Share</title>
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container py-4">
+    <h1 class="h3 mb-4">Admin panel</h1>
+
+    <ul class="nav nav-tabs mb-3">
+      <li class="nav-item"><button class="nav-link active" id="tab-users">Users</button></li>
+      <li class="nav-item"><button class="nav-link" id="tab-recipes">Recipes</button></li>
+      <li class="nav-item"><button class="nav-link" id="tab-comments">Comments</button></li>
+    </ul>
+
+    <div id="admin-content">
+      <!-- TODO: render a table for the active tab (users: username/role/promote
+           to admin; recipes: title/author/delete; comments: content/author/delete) -->
+      <p class="text-muted">Loading...</p>
+    </div>
+  </main>
+
+  <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <script type="module" src="/src/pages/admin.js"></script>
+</body>
+</html>

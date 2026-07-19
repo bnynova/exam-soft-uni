@@ -1,0 +1,17 @@
+/* App-wide overrides on top of Bootstrap. Keep page-specific tweaks here
+   too unless a page truly needs its own stylesheet. */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.recipe-card img {
+  height: 180px;
+  object-fit: cover;
+}

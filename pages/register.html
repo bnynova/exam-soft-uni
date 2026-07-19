@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Recipe Share</title>
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container py-5" style="max-width: 420px;">
+    <h1 class="h3 mb-4">Create account</h1>
+    <form id="register-form" novalidate>
+      <div class="mb-3">
+        <label class="form-label" for="username">Username</label>
+        <input type="text" id="username" class="form-control" required minlength="3">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="password">Password</label>
+        <input type="password" id="password" class="form-control" required minlength="6">
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Register</button>
+      <p class="text-center mt-3 small">Already have an account? <a href="/pages/login.html">Login</a></p>
+    </form>
+  </main>
+
+  <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <script type="module" src="/src/pages/register.js"></script>
+</body>
+</html>
